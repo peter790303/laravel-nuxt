@@ -1,41 +1,45 @@
 <template>
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" @outside="modal">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-
-            <iframe v-if="modal == 'login'" style="width:100%;height:500px;" src="http://www.twhg.com.tw/login-iframe.php?source=store&store=TAA5" frameborder="0"></iframe>
-            <div style="height:400px;" v-else-if="modal =='line' ">
-                <div class="d-flex justify-content-center">
-                    <img src="~/assets/slidermenu-line2.jpg" alt="">
-                </div>
-                <div class="d-flex justify-content-center">台灣房屋Line</div>
-            </div>
+  <div class="text-center">
+    <v-dialog v-model="login" width="500">
+      <v-card>
+        <iframe
+          src="http://www.twhg.com.tw/login-iframe.php?source=store&store=TAC6"
+          frameborder="0"
+          width="100%"
+          height="500px"
+        ></iframe>
+      </v-card>
+    </v-dialog>
+    <v-dialog v-model="line" width="500">
+      <v-card>
+        <div class="d-flex justify-content-center">
+          <img src="~/assets/slidermenu-line2.jpg" alt="" />
         </div>
-    </div>
-</div>
+        <div class="d-flex justify-content-center">台灣房屋Line</div>
+      </v-card>
+    </v-dialog>
+  </div>
 </template>
-
 <script>
 export default {
-    data() {
-        return {
-            modal: '',
-        }
-    },
-    created() {
-        this.$nuxt.$on('modal', (parameter) => {
-            this.modal = parameter;
-        })
-    },
-    beforeDestroy() {
-        this.$nuxt.$off('modal')
-    }
-
-}
+  head: {
+    script: [{ src: "/js/modal.js" }]
+  },
+  data() {
+    return {
+      login: false,
+      line: false
+    };
+  },
+  created() {
+    this.$nuxt.$on("login", parameter => {
+      console.log(parameter);
+      this.login = parameter;
+    });
+    this.$nuxt.$on("line", parameter => {
+      console.log(parameter);
+      this.line = parameter;
+    });
+  }
+};
 </script>

@@ -11,6 +11,12 @@
   "LazyLogo": {
     "description": "Auto imported from components/Logo.vue"
   },
+  "ModalCopy": {
+    "description": "Auto imported from components/Modal copy.vue"
+  },
+  "LazyModalCopy": {
+    "description": "Auto imported from components/Modal copy.vue"
+  },
   "Modal": {
     "description": "Auto imported from components/Modal.vue"
   },
@@ -23,10 +29,40 @@
   "LazyRunMarque": {
     "description": "Auto imported from components/RunMarque.vue"
   },
+  "SearchBarCopy2": {
+    "description": "Auto imported from components/SearchBar copy 2.vue"
+  },
+  "LazySearchBarCopy2": {
+    "description": "Auto imported from components/SearchBar copy 2.vue"
+  },
+  "SearchBarCopy": {
+    "description": "Auto imported from components/SearchBar copy.vue"
+  },
+  "LazySearchBarCopy": {
+    "description": "Auto imported from components/SearchBar copy.vue"
+  },
   "SearchBar": {
     "description": "Auto imported from components/SearchBar.vue"
   },
   "LazySearchBar": {
     "description": "Auto imported from components/SearchBar.vue"
+  },
+  "SearchBarAllCopy2": {
+    "description": "Auto imported from components/SearchBarAll copy 2.vue"
+  },
+  "LazySearchBarAllCopy2": {
+    "description": "Auto imported from components/SearchBarAll copy 2.vue"
+  },
+  "SearchBarAllCopy": {
+    "description": "Auto imported from components/SearchBarAll copy.vue"
+  },
+  "LazySearchBarAllCopy": {
+    "description": "Auto imported from components/SearchBarAll copy.vue"
+  },
+  "SearchBarAll": {
+    "description": "Auto imported from components/SearchBarAll.vue"
+  },
+  "LazySearchBarAll": {
+    "description": "Auto imported from components/SearchBarAll.vue"
   }
 }

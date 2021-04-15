@@ -9,11 +9,17 @@ import '..\\node_modules\\bootstrap\\dist\\css\\bootstrap.css'
 
 import '..\\node_modules\\bootstrap-vue\\dist\\bootstrap-vue.css'
 
-import _7e152806 from '..\\layouts\\default1.vue'
-import _7fd1df66 from '..\\layouts\\navBar.vue'
-import _6f6c098b from './layouts/default.vue'
+import '..\\node_modules\\vuetify\\dist\\vuetify.css'
 
-const layouts = { "_default1": sanitizeComponent(_7e152806),"_navBar": sanitizeComponent(_7fd1df66),"_default": sanitizeComponent(_6f6c098b) }
+import '..\\node_modules\\vuetify\\dist\\vuetify.css'
+
+import _c256562c from '..\\layouts\\default copy.vue'
+import _6f6c098b from '..\\layouts\\default.vue'
+import _7fd1df66 from '..\\layouts\\navBar.vue'
+import _7a6a0d8b from '..\\layouts\\navBar1.vue'
+import _7a6a0d8c from '..\\layouts\\navBar2.vue'
+
+const layouts = { "_default copy": sanitizeComponent(_c256562c),"_default": sanitizeComponent(_6f6c098b),"_navBar": sanitizeComponent(_7fd1df66),"_navBar1": sanitizeComponent(_7a6a0d8b),"_navBar2": sanitizeComponent(_7a6a0d8c) }
 
 export default {
   render (h, props) {

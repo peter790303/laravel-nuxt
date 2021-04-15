@@ -12,8 +12,9 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_plugin_ea142cb4 from 'nuxt_plugin_plugin_ea142cb4' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_bootstrapvue_baffa810 from 'nuxt_plugin_bootstrapvue_baffa810' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_plugin_75d75c71 from 'nuxt_plugin_plugin_75d75c71' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_bfee877a from 'nuxt_plugin_bootstrapvue_bfee877a' // Source: .\\bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_plugin_491e1d23 from 'nuxt_plugin_plugin_491e1d23' // Source: .\\vuetify\\plugin.js (mode: 'all')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -59,7 +60,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"nuxt","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@4.5.3\u002Fdist\u002Fcss\u002Fbootstrap.min.css","integrity":"sha384-TX8t27EcRE3e\u002FihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2","crossorigin":"anonymous"},{"rel":"stylesheet","href":"https:\u002F\u002Fuse.fontawesome.com\u002Freleases\u002Fv5.14.0\u002Fcss\u002Fall.css","integrity":"sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc","crossorigin":"anonymous"}],"script":[{"src":"https:\u002F\u002Fcode.jquery.com\u002Fjquery-3.5.1.slim.min.js"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fpopper.js@1.16.1\u002Fdist\u002Fumd\u002Fpopper.min.js"},{"src":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002Fbootstrap@4.5.3\u002Fdist\u002Fjs\u002Fbootstrap.min.js"}],"style":[]},
+    head: {"title":"nuxt","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"stylesheet","href":"https:\u002F\u002Fuse.fontawesome.com\u002Freleases\u002Fv5.14.0\u002Fcss\u002Fall.css","integrity":"sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc","crossorigin":"anonymous"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss?family=Roboto:100,300,400,500,700,900&display=swap"},{"rel":"stylesheet","type":"text\u002Fcss","href":"https:\u002F\u002Fcdn.jsdelivr.net\u002Fnpm\u002F@mdi\u002Ffont@latest\u002Fcss\u002Fmaterialdesignicons.min.css"}],"script":[{"src":"https:\u002F\u002Fcode.jquery.com\u002Fjquery-3.5.1.slim.min.js"}],"style":[]},
 
     router,
     nuxt: {
@@ -173,12 +174,16 @@ async function createApp(ssrContext, config = {}) {
   }
   // Plugin execution
 
-  if (typeof nuxt_plugin_plugin_ea142cb4 === 'function') {
-    await nuxt_plugin_plugin_ea142cb4(app.context, inject)
+  if (typeof nuxt_plugin_plugin_75d75c71 === 'function') {
+    await nuxt_plugin_plugin_75d75c71(app.context, inject)
   }
 
-  if (typeof nuxt_plugin_bootstrapvue_baffa810 === 'function') {
-    await nuxt_plugin_bootstrapvue_baffa810(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_bfee877a === 'function') {
+    await nuxt_plugin_bootstrapvue_bfee877a(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_plugin_491e1d23 === 'function') {
+    await nuxt_plugin_plugin_491e1d23(app.context, inject)
   }
 
   // Lock enablePreview in context
